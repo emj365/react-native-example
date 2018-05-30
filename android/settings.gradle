@@ -1,0 +1,3 @@
+rootProject.name = 'jpush_rn_demo'
+
+include ':app'
