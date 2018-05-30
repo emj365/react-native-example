@@ -17,6 +17,11 @@
 
 @implementation AppDelegate
 
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+  //Optional
+  NSLog(@"did Fail To Register For Remote Notifications With Error: %@", error);
+}
+
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
   [JPUSHService registerDeviceToken:deviceToken];
@@ -62,6 +67,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  //Required
+  //notice: 3.0.0及以后版本注册可以这样写，也可以继续用之前的注册方式
+  JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
+  entity.types = JPAuthorizationOptionAlert|JPAuthorizationOptionBadge|JPAuthorizationOptionSound;
+  if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+    // 可以添加自定义categories
+    // NSSet<UNNotificationCategory *> *categories for iOS10 or later
+    // NSSet<UIUserNotificationCategory *> *categories for iOS8 and iOS9
+  }
+  [JPUSHService registerForRemoteNotificationConfig:entity delegate:self];
+
   [JPUSHService setupWithOption:launchOptions appKey:@"1df6239b32c427addb126022"
                         channel:nil apsForProduction:nil];
 
