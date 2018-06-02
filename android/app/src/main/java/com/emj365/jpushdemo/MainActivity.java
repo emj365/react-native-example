@@ -1,4 +1,4 @@
-package com.jpush_rn_demo;
+package com.emj365.jpushdemo;
 
 import com.facebook.react.ReactActivity;
 
