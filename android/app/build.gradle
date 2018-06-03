@@ -142,6 +142,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-tts')
     compile project(':jcore-react-native')
     compile project(':jpush-react-native')
     compile fileTree(dir: "libs", include: ["*.jar"])

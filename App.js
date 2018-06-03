@@ -7,13 +7,24 @@
 import React, { Component } from 'react'
 import { Platform, StyleSheet, Text, View } from 'react-native'
 import JPushModule from 'jpush-react-native'
-console.log(JPushModule)
+import Tts from 'react-native-tts'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
     'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu'
+})
+
+const ttsOptions = Platform.select({
+  ios: { iosVoiceId: 'com.apple.ttsbundle.Moira-compact' },
+  android: {
+    androidParams: {
+      KEY_PARAM_PAN: -1,
+      KEY_PARAM_VOLUME: 0.5,
+      KEY_PARAM_STREAM: 'STREAM_MUSIC'
+    }
+  }
 })
 
 // prettier-ignore
@@ -26,7 +37,15 @@ export default class App extends Component<Props> {
   }
 
   componentDidMount() {
-    // JPushModule.initPush()
+    JPushModule.initPush()
+    Tts.getInitStatus().then(() => {
+      Tts.setDucking(true)
+      Tts.addEventListener('tts-start', event => console.log('start', event))
+      Tts.addEventListener('tts-finish', event => console.log('finish', event))
+      Tts.addEventListener('tts-cancel', event => console.log('cancel', event))
+      console.log('ttsOptions', ttsOptions)
+      Tts.speak('Hello, world!', ttsOptions)
+    })
 
     if (Platform.OS === 'ios') {
       // JPushModule.setBadge(0)

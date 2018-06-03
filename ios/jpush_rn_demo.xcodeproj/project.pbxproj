@@ -51,6 +51,7 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B1B4867C322D48449E903E65 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5E5FBB6C12412995145382 /* libresolv.tbd */; };
 		BF8E4B70296A44BF81BECDDE /* libRCTJCoreModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34610303DEEA4B5C829ECE0E /* libRCTJCoreModule.a */; };
+		F9EDAFE4C771451696355AFD /* libTextToSpeech.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDCB51812F264A6B8F7FC0D6 /* libTextToSpeech.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -306,6 +307,13 @@
 			remoteGlobalIDString = 6280980A1CEDC407000D3A81;
 			remoteInfo = RCTJPushModule;
 		};
+		4CF28C3E20C51C57002C0F61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45833EFA7B9C4D158C1B46BC /* TextToSpeech.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A6FB2081D99E12200593599;
+			remoteInfo = TextToSpeech;
+		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
@@ -368,6 +376,7 @@
 		2D02E4901E0B4A5D006451C7 /* jpush_rn_demo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "jpush_rn_demo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		34610303DEEA4B5C829ECE0E /* libRCTJCoreModule.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTJCoreModule.a; sourceTree = "<group>"; };
+		45833EFA7B9C4D158C1B46BC /* TextToSpeech.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = TextToSpeech.xcodeproj; path = "../node_modules/react-native-tts/ios/TextToSpeech.xcodeproj"; sourceTree = "<group>"; };
 		465B23746AEA4F7EBEF53AAB /* Security.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4CC679A820BEF9C900E56C7C /* jpush_rn_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = jpush_rn_demo.entitlements; path = jpush_rn_demo/jpush_rn_demo.entitlements; sourceTree = "<group>"; };
 		5B7C1238672A4A63A937BD06 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -384,6 +393,7 @@
 		A56EEEE053CE47898D0D6528 /* RCTJPushModule.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTJPushModule.xcodeproj; path = "../node_modules/jpush-react-native/ios/RCTJPushModule.xcodeproj"; sourceTree = "<group>"; };
 		A5BC0993600845279CD9BEE6 /* Foundation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		BDCB51812F264A6B8F7FC0D6 /* libTextToSpeech.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libTextToSpeech.a; sourceTree = "<group>"; };
 		C9487477F3B04069A94A0A96 /* RCTJCoreModule.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTJCoreModule.xcodeproj; path = "../node_modules/jcore-react-native/ios/RCTJCoreModule.xcodeproj"; sourceTree = "<group>"; };
 		F261C9D37022449484F68577 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -427,6 +437,7 @@
 				80B61CA978264E2999DC23EB /* UIKit.framework in Frameworks */,
 				B1B4867C322D48449E903E65 /* libresolv.tbd in Frameworks */,
 				A4403205CE6848F1892CF8C6 /* CoreGraphics.framework in Frameworks */,
+				F9EDAFE4C771451696355AFD /* libTextToSpeech.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +608,7 @@
 			children = (
 				34610303DEEA4B5C829ECE0E /* libRCTJCoreModule.a */,
 				1DB594D9177741E488268BB8 /* libRCTJPushModule.a */,
+				BDCB51812F264A6B8F7FC0D6 /* libTextToSpeech.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -613,6 +625,14 @@
 			isa = PBXGroup;
 			children = (
 				4CC679A420BEF96E00E56C7C /* libRCTJCoreModule.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CF28C3B20C51C57002C0F61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CF28C3F20C51C57002C0F61 /* libTextToSpeech.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -652,6 +672,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				C9487477F3B04069A94A0A96 /* RCTJCoreModule.xcodeproj */,
 				A56EEEE053CE47898D0D6528 /* RCTJPushModule.xcodeproj */,
+				45833EFA7B9C4D158C1B46BC /* TextToSpeech.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -878,6 +899,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = 4CF28C3B20C51C57002C0F61 /* Products */;
+					ProjectRef = 45833EFA7B9C4D158C1B46BC /* TextToSpeech.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1129,6 +1154,13 @@
 			remoteRef = 4CC679A620BEF96E00E56C7C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		4CF28C3F20C51C57002C0F61 /* libTextToSpeech.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTextToSpeech.a;
+			remoteRef = 4CF28C3E20C51C57002C0F61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1307,12 +1339,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/jcore-react-native/ios/RCTJCoreModule",
 					"$(SRCROOT)/../node_modules/jpush-react-native/ios/RCTJPushModule",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = jpush_rn_demoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1335,12 +1369,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/jcore-react-native/ios/RCTJCoreModule",
 					"$(SRCROOT)/../node_modules/jpush-react-native/ios/RCTJPushModule",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = jpush_rn_demoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1365,6 +1401,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/jcore-react-native/ios/RCTJCoreModule",
 					"$(SRCROOT)/../node_modules/jpush-react-native/ios/RCTJPushModule",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = jpush_rn_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1390,6 +1427,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/jcore-react-native/ios/RCTJCoreModule",
 					"$(SRCROOT)/../node_modules/jpush-react-native/ios/RCTJPushModule",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = jpush_rn_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1420,11 +1458,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/jcore-react-native/ios/RCTJCoreModule",
 					"$(SRCROOT)/../node_modules/jpush-react-native/ios/RCTJPushModule",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = "jpush_rn_demo-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1456,11 +1496,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/jcore-react-native/ios/RCTJCoreModule",
 					"$(SRCROOT)/../node_modules/jpush-react-native/ios/RCTJPushModule",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = "jpush_rn_demo-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1491,11 +1533,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/jcore-react-native/ios/RCTJCoreModule",
 					"$(SRCROOT)/../node_modules/jpush-react-native/ios/RCTJPushModule",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = "jpush_rn_demo-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1526,11 +1570,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/jcore-react-native/ios/RCTJCoreModule",
 					"$(SRCROOT)/../node_modules/jpush-react-native/ios/RCTJPushModule",
+					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = "jpush_rn_demo-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);

@@ -12,6 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import cn.jpush.reactnativejpush.JPushPackage;   // <--   导入 JPushPackage
+import net.no_mad.tts.TextToSpeechPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -30,7 +31,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-          new JPushPackage(SHUTDOWN_TOAST, SHUTDOWN_LOG)   //  <-- 添加 JPushPackage
+          new TextToSpeechPackage(),
+          new JPushPackage(SHUTDOWN_TOAST, SHUTDOWN_LOG)
       );
     }
 
