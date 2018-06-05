@@ -812,6 +812,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = FW5WEJ23PM;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1330,6 +1331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = FW5WEJ23PM;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1342,7 +1344,7 @@
 					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = jpush_rn_demoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1363,6 +1365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = FW5WEJ23PM;
 				HEADER_SEARCH_PATHS = (
@@ -1372,7 +1375,7 @@
 					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = jpush_rn_demoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1394,6 +1397,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = jpush_rn_demo/jpush_rn_demo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: MinJie Jin (GLTH34MQR6)";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = FW5WEJ23PM;
@@ -1404,6 +1410,7 @@
 					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = jpush_rn_demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1412,6 +1419,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.emj365.jpushdemo;
 				PRODUCT_NAME = jpush_rn_demo;
+				PROVISIONING_PROFILE = "ff7802c0-b2a3-4761-bd2e-2a2b767b81c8";
+				PROVISIONING_PROFILE_SPECIFIER = "jpush demo development";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1421,6 +1430,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = jpush_rn_demo/jpush_rn_demo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MinJie Jin (FW5WEJ23PM)";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FW5WEJ23PM;
 				HEADER_SEARCH_PATHS = (
@@ -1430,6 +1442,7 @@
 					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 				);
 				INFOPLIST_FILE = jpush_rn_demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1438,6 +1451,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.emj365.jpushdemo;
 				PRODUCT_NAME = jpush_rn_demo;
+				PROVISIONING_PROFILE = "e66da5d6-f75a-4764-89af-efcc8f37a587";
+				PROVISIONING_PROFILE_SPECIFIER = "jpush demo release";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1609,8 +1624,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: MinJie Jin (GLTH34MQR6)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1651,8 +1666,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MinJie Jin (FW5WEJ23PM)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
